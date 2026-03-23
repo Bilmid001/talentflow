@@ -7,38 +7,38 @@ import Link from 'next/link';
 const courses = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&q=80',
+    image: '/images/image.png',
     category: 'Design',
     title: 'Figma UI UX Design..',
     description: 'Use Figma to get a job in UI Design, User Interface, User Experience design.',
     rating: 4.3,
     reviews: 120,
     duration: '08 hr 12 mins',
-    instructor: { name: 'Jane Cooper', avatar: 'https://randomuser.me/api/portraits/women/1.jpg', enrolled: 2001 },
+    instructor: { name: 'Jane Cooper', avatar: '/images/avatar.png', enrolled: 2001 },
     price: '$19.14',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80',
+    image: 'images/image(1).png',
     category: 'Design',
     title: 'Learn With Shoaib',
     description: 'Design Web Sites and Mobile Apps that Your Users Love and Return to Again.',
     rating: 3.9,
     reviews: 32,
     duration: '06 hr 3 mins',
-    instructor: { name: 'Jenny Wilson', avatar: 'https://randomuser.me/api/portraits/women/2.jpg', enrolled: 2001 },
+    instructor: { name: 'Jenny Wilson', avatar: '/images/avatar(1).png', enrolled: 2001 },
     price: '$10.99',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1576153192396-180ecef2a715?w=500&q=80',
+    image: '/images/image(2).png',
     category: 'Design',
     title: 'Building User Interface..',
     description: 'Learn how to apply User Experience (UX) principles to your website designs.',
     rating: 4.2,
     reviews: 200,
     duration: '01 hr 2 mins',
-    instructor: { name: 'Esther Howard', avatar: 'https://randomuser.me/api/portraits/women/3.jpg', enrolled: 2001 },
+    instructor: { name: 'Esther Howard', avatar: '/images/avatar(2).png', enrolled: 2001 },
     price: '$14.98',
   },
   {
@@ -103,7 +103,7 @@ export default function PopularCourses() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-10">
-          <p className="text-primary font-semibold text-sm mb-1">Explore Programs</p>
+          <p className="text-primary font-semibold text-sm mb-1 text-[22px]">Explore Programs</p>
           <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 mb-2">Our Most Popular Class</h2>
           <p className="text-gray-500 text-sm">
             Let&apos;s join our famous class, the knowledge provided will definitely be useful for you.
@@ -118,7 +118,7 @@ export default function PopularCourses() {
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
             >
               {/* Image */}
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-50 overflow-hidden">
                 <img
                   src={course.image}
                   alt={course.title}

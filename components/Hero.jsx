@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight text-gray-900">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight text-primary">
               Learn{' '}
               <span className="text-[#F59E0B]">Smarter</span>{' '}
               with
@@ -27,7 +27,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/courses"
-                className="px-7 py-3.5 border-2 border-gray-800 text-gray-800 font-semibold rounded-xl hover:border-primary hover:text-primary transition-all text-sm flex items-center gap-2"
+                className="px-7 py-3.5 border-2 border-primary text-primary font-semibold rounded-xl hover:border-primary hover:text-primary transition-all text-sm flex items-center gap-2"
               >
                 Explore Courses
                 <ArrowUpRight size={16} />
@@ -40,7 +40,7 @@ export default function Hero() {
             {/* Background image — large card */}
             <div className="absolute right-0 bottom-0 w-[85%] h-[75%] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80"
+                src="/images/frame14.png"
                 alt="Students learning together"
                 className="w-full h-full object-cover"
               />
@@ -48,7 +48,7 @@ export default function Hero() {
             {/* Foreground image — smaller card overlapping top-left */}
             <div className="absolute left-0 top-0 w-[55%] h-[52%] rounded-3xl overflow-hidden shadow-xl border-4 border-white">
               <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=80"
+                src="/images/frame15.png"
                 alt="Teaching session"
                 className="w-full h-full object-cover"
               />

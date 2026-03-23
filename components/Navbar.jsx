@@ -56,18 +56,16 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-10 h-10 relative">
               {/* Graduation cap SVG logo */}
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="19" stroke="#2563EB" strokeWidth="2" fill="white"/>
-                <path d="M20 10L32 16L20 22L8 16L20 10Z" fill="#2563EB"/>
-                <path d="M12 18.5V25C12 25 15 28 20 28C25 28 28 25 28 25V18.5" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round"/>
-                <line x1="32" y1="16" x2="32" y2="24" stroke="#2563EB" strokeWidth="2.5" strokeLinecap="round"/>
-                <circle cx="32" cy="25" r="2" fill="#F59E0B"/>
-              </svg>
+              <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="w-10 h-10"
+            />
             </div>
             <div className="flex flex-col leading-tight">
               <span className="text-lg font-800 font-extrabold">
-                <span className="text-gray-900">Talent</span>
-                <span className="text-[#F59E0B]">Flow</span>
+                {/* <span className="text-gray-900">Talent</span>
+                <span className="text-[#F59E0B]">Flow</span> */}
               </span>
             </div>
           </Link>
@@ -86,6 +84,7 @@ export default function Navbar() {
                   coursesOpen
                     ? 'bg-primary text-white'
                     : 'text-gray-700 hover:text-primary'
+                    // 'text-white hover:text-primary bg-primary'
                 }`}
               >
                 Courses
@@ -102,8 +101,8 @@ export default function Navbar() {
                     className="fixed inset-0 z-10"
                     onClick={() => setCoursesOpen(false)}
                   />
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[780px] bg-white rounded-xl shadow-2xl border border-gray-100 z-20 p-6">
-                    <div className="grid grid-cols-4 gap-6">
+                  <div className="absolute top-full left-1/4 -translate-x-1/4 mt-2 w-[930px] bg-white rounded-xl shadow-2xl border border-gray-100 z-20 p-6">
+                    <div className="grid grid-cols-4 gap-5">
                       {courseCategories.map((cat) => (
                         <div key={cat.title}>
                           <h4 className="text-xs font-700 font-bold text-gray-500 uppercase tracking-wider mb-3">

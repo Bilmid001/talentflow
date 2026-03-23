@@ -2,22 +2,22 @@ const tutors = [
   {
     name: 'Bonnie Green',
     role: 'Application Support Analyst Lead',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg',
+    image: '/images/header.png',
   },
   {
     name: 'Thomas Lean',
     role: 'Career Educator',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    image: '/images/card-header.png',
   },
   {
     name: 'Jese Leos',
     role: 'Senior Product Designer Lead',
-    image: 'https://randomuser.me/api/portraits/men/47.jpg',
+    image: '/images/card-header(1).png',
   },
   {
     name: 'Leslie Livingston',
     role: 'Senior Front-end Developer',
-    image: 'https://randomuser.me/api/portraits/women/65.jpg',
+    image: '/images/card-header(2).png',
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Tutors() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold text-sm mb-2">Tutors</p>
+          <p className="text-primary font-semibold text-sm mb-2 text-[22px]">Tutors</p>
           <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 mb-3">Meet the Heroes</h2>
           <p className="text-gray-500 text-sm max-w-lg mx-auto">
             On TalentFlow Instructors from all over the world instruct millions of students.

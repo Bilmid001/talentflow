@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Monitor, BarChart2, ChevronRight } from 'lucide-react';
+import { Monitor, LineChart, ChevronRight, MonitorSmartphone, } from 'lucide-react';
 import Link from 'next/link';
 
 const features = [
   {
-    icon: Monitor,
+    icon: MonitorSmartphone,
     title: 'Interaction Design',
     description: 'Lessons on design that cover the most recent developments.',
     iconBg: 'bg-blue-100',
@@ -22,7 +22,7 @@ const features = [
     active: false,
   },
   {
-    icon: BarChart2,
+    icon: LineChart,
     title: 'User Interface Design',
     description: 'User Interface Design courses that cover the most recent trends',
     iconBg: 'bg-purple-100',
@@ -39,9 +39,9 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold text-sm mb-2">Features</p>
+          <p className="text-primary font-semibold text-sm mb-4 text-[22px]">Features</p>
           <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900">
-            Fostering a playful & engaging learning environment
+            Fostering a playful & engaging learning <br />environment
           </h2>
         </div>
 
@@ -56,7 +56,7 @@ export default function Features() {
                 onClick={() => setActive(index)}
                 className={`rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
                   isActive
-                    ? 'bg-[#1E3A8A] text-white shadow-xl'
+                    ? 'bg-primary text-white shadow-xl'
                     : 'bg-white border border-gray-100 shadow-sm hover:shadow-md'
                 }`}
               >

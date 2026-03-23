@@ -5,7 +5,7 @@ import { useState } from 'react';
 const blogs = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=500&q=80',
+    image: '/images/image(Replace).png',
     tag: 'Design',
     tagColor: 'bg-blue-50 text-primary',
     title: 'Typography in web design: Enhancing UI/UX web apps',
@@ -13,7 +13,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=500&q=80',
+    image: 'images/image(Replace)(1).png',
     tag: 'Web',
     tagColor: 'bg-blue-50 text-primary',
     title: 'Responsive design: Cross-device experience',
@@ -21,7 +21,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80',
+    image: 'images/image(Replace)(2).png',
     tag: 'Web',
     tagColor: 'bg-blue-50 text-primary',
     title: 'Web design best practices: Optimizing speed',
@@ -63,7 +63,7 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-primary font-semibold text-sm mb-1">Our recent blogs</p>
+          <p className="text-primary font-semibold text-sm mb-1 text-[22px]">Our recent blogs</p>
         </div>
 
         {/* Blog Cards */}

@@ -26,22 +26,22 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="19" stroke="#2563EB" strokeWidth="2" fill="#111827"/>
-                  <path d="M20 10L32 16L20 22L8 16L20 10Z" fill="#2563EB"/>
-                  <path d="M12 18.5V25C12 25 15 28 20 28C25 28 28 25 28 25V18.5" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round"/>
-                  <line x1="32" y1="16" x2="32" y2="24" stroke="#2563EB" strokeWidth="2.5" strokeLinecap="round"/>
-                  <circle cx="32" cy="25" r="2" fill="#F59E0B"/>
-                </svg>
-              </div>
+              
+              <div className="w-10 h-10 relative">
+              {/* Graduation cap SVG logo */}
+              <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="w-10 h-10"
+            />
+            </div>
               <span className="text-lg font-extrabold">
-                <span className="text-white">Talent</span>
-                <span className="text-[#F59E0B]">Flow</span>
+                {/* <span className="text-white">Talent</span>
+                <span className="text-[#F59E0B]">Flow</span> */}
               </span>
             </div>
-            <p className="text-sm leading-relaxed mb-6 text-gray-400">
-              Top learning experiences that create more talent in the world.
+            <p className="text-sm leading-relaxed mb-6 text-gray-400 text-[16px]">
+              Top learning experiences that create more <br  /> talent in the world.
             </p>
             {/* Newsletter */}
             <form onSubmit={handleSubmit} className="flex gap-2">

@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function CTA() {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-primary py-20 mb-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">
+        <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-4 leading-tight">
           Everyone deserves the chance to learn with TalentFlow
         </h2>
         <p className="text-blue-100 text-sm lg:text-base mb-8 max-w-2xl mx-auto">
